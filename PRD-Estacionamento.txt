@@ -1,0 +1,138 @@
+Documento de Requisitos de Produto
+(DRP) para Micro-SaaS de
+Estacionamento Rotativo e Mensal
+1. Introdução
+Este Documento de Requisitos de Produto (DRP) detalha as funcionalidades e requisitos
+para o desenvolvimento de um micro-SaaS focado na gestão de estacionamentos
+rotativos e mensais. O objetivo é fornecer uma solução eficiente e de baixo custo para
+proprietários de estacionamentos, otimizando a gestão de vagas, o controle de acesso e
+a arrecadação.
+2. Visão Geral do Produto
+O micro-SaaS será uma plataforma web que permitirá a gestão completa de
+estacionamentos, abrangendo tanto o modelo rotativo (por tempo de uso) quanto o
+mensal (para clientes fixos). A solução visa simplificar as operações diárias, melhorar a
+experiência do usuário final e fornecer dados valiosos para a tomada de decisões.
+3. Definição de Micro-SaaS
+Micro-SaaS representa uma maneira de construir software de nicho sem empregar
+recursos extensivos. Com um layout simples, suporte reduzido e requisitos de
+gerenciamento de produto, o software micro-SaaS é utilizado por um grande número de
+empresas de diferentes setores.
+Empreendedores individuais, start-ups ou PMEs podem considerar o micro-SaaS se seus
+objetivos forem focados na ideia de valor do produto e eficiência operacional para
+solicitações direcionadas.
+Principais conclusões
+Micro-SaaS oferece soluções altamente especializadas: O software Micro-SaaS
+oferece resoluções para solicitações especializadas, fornecendo aos
+desenvolvedores dados focados.
+•
+Micro-SaaS é ideal para equipes com orçamento limitado: Start-ups com recursos
+mínimos escolhem opções de micro-SaaS devido aos seus baixos custos de
+desenvolvimento e operação.
+Marketing de Micro-SaaS de Sucesso Requer Foco em Nicho: O software Micro-SaaS
+pode atingir o público-alvo por meio de marketing de influenciadores, produção
+de conteúdo e construção de comunidade direcionada.
+4. Formas de Controle de Estacionamento
+O controle de estacionamento pode ser feito de diversas formas, cada uma com suas
+vantagens e desvantagens:
+Computador: Oferece maior controle e recursos, mas pode ter alto custo de
+equipamentos e dependência de energia e internet.
+Papel e caneta: Método manual, propenso a erros e ineficiente para grandes
+volumes.
+Smartphone (aplicativo): Solução de baixo custo e fácil operação, ideal para
+mobilidade.
+PDV ou POS: Máquinas 3 em 1 (mini impressora térmica portátil, sistema de
+controle e máquina de cartão) que agilizam o atendimento e oferecem segurança
+operacional.
+Excel: Demandam conhecimento técnico para serem bem feitas e não geram
+relatórios suficientes para controle operacional.
+Totem/Cancela: Comum em shoppings, ideal para grandes fluxos de entrada e
+saída, mas com alto custo de investimento.
+5. Funcionalidades Principais
+5.1. Estacionamento Rotativo
+Registro de Entrada e Saída: Sistema para registrar o horário de entrada e saída
+dos veículos.
+Cálculo de Tarifa: Cálculo automático da tarifa com base no tempo de
+permanência e regras de precificação configuráveis (por hora, fração, etc.).
+Pagamento: Integração com métodos de pagamento (cartão de crédito/débito,
+PIX, dinheiro).
+Gestão de Vagas: Visualização em tempo real da ocupação das vagas e
+disponibilidade.
+Relatórios: Geração de relatórios de faturamento, ocupação e movimentação de
+veículos.
+
+Aplicativo para Usuário: Possibilidade de o usuário visualizar vagas disponíveis,
+pagar e estender o tempo de estacionamento via aplicativo móvel.
+5.2. Estacionamento Mensal
+Cadastro de Mensalistas: Gerenciamento de clientes mensalistas, incluindo dados
+pessoais e do veículo.
+Controle de Acesso: Sistema para identificar e permitir o acesso de mensalistas
+(ex: leitura de placa, tag de acesso).
+Cobrança Recorrente: Geração automática de cobranças mensais e controle de
+pagamentos.
+Gestão de Contratos: Gerenciamento de contratos de mensalistas, com datas de
+início e fim, e status.
+Relatórios: Relatórios de mensalistas ativos, inativos, pagamentos e
+inadimplência.
+Vagas Dedicadas (Opcional): Possibilidade de atribuir vagas fixas para
+mensalistas ou permitir o uso de vagas rotativas com prioridade.
+6. Arquitetura Tecnológica
+Para o desenvolvimento do micro-SaaS, a arquitetura tecnológica será baseada nas
+seguintes tecnologias, conforme as preferências do usuário:
+Backend: PHP (com um framework como Laravel ou Symfony para robustez e
+escalabilidade).
+Banco de Dados: MySQL para armazenamento de dados de veículos, usuários,
+pagamentos, vagas, etc.
+Frontend: JavaScript para interatividade, com Bootstrap para um design
+responsivo e moderno, garantindo uma boa experiência de usuário em diferentes
+dispositivos.
+Servidor: Ambiente Linux (Ubuntu) com Nginx ou Apache.
+7. Requisitos de Design e UX
+O design e a experiência do usuário serão prioridades para garantir a usabilidade e a
+satisfação do cliente:
+Interface Intuitiva: Design limpo e fácil de usar, minimizando a curva de
+aprendizado para novos usuários.
+Responsividade: O sistema deve ser totalmente responsivo, adaptando-se a
+diferentes tamanhos de tela (desktops, tablets, smartphones).
+
+Fluxos Otimizados: Os fluxos de registro, pagamento e gestão de vagas devem ser
+otimizados para agilidade e eficiência.
+Feedback Visual: Fornecer feedback visual claro para todas as ações do usuário
+(confirmações, erros, carregamento).
+Acessibilidade: Considerar princípios de acessibilidade para garantir que o
+sistema possa ser utilizado por pessoas com diferentes necessidades.
+8. Requisitos Não Funcionais
+Além das funcionalidades, os seguintes requisitos não funcionais são cruciais para o
+sucesso do micro-SaaS:
+Segurança:
+Autenticação e autorização robustas para acesso ao sistema.
+Proteção de dados sensíveis (informações de pagamento, dados pessoais)
+com criptografia.
+Auditoria de ações do usuário para rastreabilidade.
+Performance:
+Tempos de resposta rápidos para todas as operações, mesmo com um grande
+volume de dados e usuários.
+Otimização de consultas ao banco de dados e código para garantir eficiência.
+Escalabilidade:
+Capacidade de lidar com um aumento no número de usuários e
+estacionamentos sem degradação de performance.
+Arquitetura que permita a adição de novas funcionalidades e módulos
+facilmente.
+Disponibilidade:
+Alta disponibilidade do sistema para garantir que os usuários possam acessálo a qualquer momento.
+Mecanismos de backup e recuperação de desastres.
+Manutenibilidade:
+Código limpo, modular e bem documentado para facilitar a manutenção e
+futuras atualizações.
+Uso de padrões de desenvolvimento e boas práticas.
+Usabilidade:
+Conforme os requisitos de Design e UX mencionados acima.
+Compatibilidade:
+Compatibilidade com os principais navegadores web (Chrome, Firefox, Safari,
+Edge).
+Compatibilidade com dispositivos móveis (iOS, Android).
+
+9. Conclusão
+Este DRP serve como um guia abrangente para o desenvolvimento do micro-SaaS de
+estacionamento rotativo e mensal. Ao seguir os requisitos e diretrizes aqui
+estabelecidos, a equipe de desenvolvimento poderá construir uma solução robusta,
+eficiente e alinhada às necessidades do mercado.
