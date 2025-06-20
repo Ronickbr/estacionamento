@@ -10,8 +10,8 @@ class Database {
     public function __construct() {
         $this->host = $_ENV['DB_HOST'] ?? 'db';
         $this->db_name = $_ENV['DB_NAME'] ?? 'estacionamento';
-        $this->username = $_ENV['DB_USER'] ?? 'root';
-        $this->password = $_ENV['DB_PASS'] ?? 'root123';
+        $this->username = $_ENV['DB_USER'] ?? '';
+        $this->password = $_ENV['DB_PASS'] ?? '';
     }
     
     public function getConnection() {
